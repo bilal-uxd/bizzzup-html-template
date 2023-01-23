@@ -1,0 +1,127 @@
+/* dummy css start leave it */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+body {
+    padding: 0 100px;
+}
+
+/* dummy css end leave it*/
+
+/* common css start */
+
+.common-section-title {
+    margin: 15px 0 0 0;
+    font-size: 3rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: inherit;
+}
+
+.common-section-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    font-family: inherit;
+    border-top: 1px solid black;
+    margin: 10px 0 0 0;
+    padding: 5px 0 0 0;
+    box-sizing: border-box;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.full-width {
+    width: 100% !important;
+}
+
+/* common css end */
+
+/* team section start */
+
+.team-content-container {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 25px;
+    column-gap: 2%;
+    margin: 25px 0 0 0;
+    justify-content: space-between;
+}
+
+.team-profile-container {
+    width: 23%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.team-profile-image {
+    height: 100%;
+    width: auto;
+    margin: 0 auto;
+    display: block;
+    padding: 5px 5px 0;
+    box-sizing: border-box;
+}
+
+.team-profile-name-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: .5px;
+    font-family: inherit;
+    overflow: hidden;
+}
+
+.team-profile-name {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+@media screen and (min-width:700px) and (max-width: 950px) {
+    .team-content-container {
+        row-gap: 25px;
+        column-gap: 5%;
+    }
+
+    .team-profile-container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .team-content-container {
+        row-gap: 15px;
+        column-gap: 0;
+    }
+
+    .team-profile-container {
+        width: 100%;
+    }
+}
+
+/* team section end */
