@@ -67,14 +67,13 @@ body {
     width: 100%;
     display: flex;
     flex-flow: row wrap;
-    row-gap: 25px;
-    column-gap: 2%;
+    gap: 25px;
     margin: 25px 0 0 0;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .team-profile-container {
-    flex: 1 1 23%;
+    flex: 1 1 calc(25% - 25px);
     min-height: 250px;
     position: relative;
     overflow: hidden;
@@ -125,23 +124,21 @@ body {
 
 @media screen and (min-width:700px) and (max-width: 950px) {
     .team-content-container {
-        row-gap: 25px;
-        column-gap: 5%;
+        gap: 15px;
     }
 
     .team-profile-container {
-        width: 45%;
+        flex: 1 1 calc(50% - 15px);
     }
 }
 
 @media screen and (max-width:700px) {
     .team-content-container {
-        row-gap: 15px;
-        column-gap: 0;
+        gap: 15px;
     }
 
     .team-profile-container {
-        width: 100%;
+        flex: 1 1 100%;
     }
 }
 
