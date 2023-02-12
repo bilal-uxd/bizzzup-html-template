@@ -1,21 +1,3 @@
-/* dummy css start leave it */
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-body {
-    padding: 0 100px;
-}
-
-/* dummy css end leave it*/
-
 /* common css start */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap');
@@ -74,7 +56,7 @@ body {
 
 .team-profile-container {
     flex: 1 1 calc(25% - 25px);
-    min-height: 250px;
+    height: 300px;
     position: relative;
     overflow: hidden;
     border-radius: 5px;
@@ -148,7 +130,7 @@ body {
 
 .testimonial-container {
     background: rgba(213, 214, 245, 0.15);
-    padding: 20px 0 0 0;
+    padding: 20px 15px 0;
     box-sizing: border-box;
 }
 
@@ -481,7 +463,7 @@ body {
 
 .case-study-container {
     background-color: #F3F6FF;
-    padding: 50px 0;
+    padding: 50px 15px;
     box-sizing: border-box;
 }
 
@@ -619,6 +601,7 @@ body {
     background: #FFFFFF;
     border: 1px solid #A4A4A4;
     display: flex;
+    margin: 0;
 }
 
 .faq-item-container li.active {
@@ -686,9 +669,8 @@ body {
 
 .contact-content {
     margin: 0 auto;
-    padding: 50px 0;
+    padding: 50px 15px;
     box-sizing: border-box;
-    max-width: 90%;
     width: 100%;
     display: flex;
     gap: 15px;
@@ -761,3 +743,68 @@ body {
 }
 
 /* contact end */
+
+
+/* one press theme custom style start */
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .onepress-menu {
+        display: none;
+    }
+
+    .testimonial-container,
+    .case-study-container,
+    .contact-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px) !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .testimonial-container,
+    .case-study-container,
+    .contact-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px) !important;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .testimonial-container,
+    .case-study-container,
+    .contact-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px) !important;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .testimonial-container,
+    .case-study-container,
+    .contact-container {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px) !important;
+    }
+}
+
+/* one press theme custom style end */
