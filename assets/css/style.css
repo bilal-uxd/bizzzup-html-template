@@ -327,35 +327,7 @@ body {
     }
 }
 
-/* service section start */
-
-/* contact section start */
-
-.contact-title {
-    text-align: center;
-}
-
-.contact-subtitle {
-    text-align: center;
-    border: none;
-    font-weight: 500;
-    color: #666666;
-    font-size: 1rem;
-    max-width: 800px;
-    margin: 0 auto;
-    display: block;
-    text-transform: none;
-    padding: 0;
-}
-
-.contact-center-container {
-    margin: 35px auto 0;
-    width: 100%;
-    max-width: 500px;
-}
-
-/* contact section end */
-
+/* service section end */
 
 /* business info start */
 
